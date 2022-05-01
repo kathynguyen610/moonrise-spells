@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+  --mainbg: #2a2a39;
+  --secondbg: #12121e;
+  --bannerbgcolor: #010118;
+  --iconcolor: #a0a0a6;
+  --hovericoncolor: #6668e8;
+  --boardbg: #1d1d2c;
+  --bronze: #a9894a;
+  --silver: #b9b9e3;
+  --gold: #eacf9b;
+  --thirdbg: #3b3b4a;
+  --sybaris: #33ad28;
+  --pegasus: #32b8ca;
+  --hydra: #bb408a;
+  --cerberus: #d44834;
+  --paper: #fcf8f7;
+  --print: #333;
+  --tiny: #999;
+}
+
+body {
+  background-color: var(--boardbg);
+ font-family: "Jost";
+  font-size: 13px; color:var(--iconcolor);
+  padding:2em;
+  width:70vw;
+  min-width:500px;
+  margin:0 auto;
+  margin-top:2%;
+}
+
+.list {
+  margin-top:2em;
+  height:70vh;
+  overflow:auto;
+  scrollbar-width:thin;
+}
+
+.searchsubdomains {
+  margin:1em;
+}
+
+.spellcont {
+  display: flex;
+  background: var(--secondbg);
+  padding: 2em 1em;
+  margin:1em;
+  line-height:180%;
+}
+
+.spellimgcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  min-width: 50px;
+  height: 50px;
+  margin: auto 5px;
+  margin-right:1em;
+}
+
+.spellbody {
+  max-height: 100px;
+  overflow-y: auto;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thirdbg) var(--secondbg);
+}
+
+.spellcont img {
+  margin: 0 auto;
+}
+
+.spellbody b {
+  text-transform: uppercase;
+  font-weight: 700;
+color: var(--hovericoncolor);
+}
+
+.spellcont .level,
+.spellcont .type,
+.spellcont .domain,
+.spellcont .subdomain,
+.spellcont .utility,
+.spellcont .starter {
+  background-color:var(--boardbg);
+  padding:0.2em 0.5em;
+  margin:0.5em 0.2em 0 0;
+  text-transform:uppercase;
+  font-size:0.8em;
+  letter-spacing:0.05em;
+}
+
+.spellcont .starter:blank{
+   padding:0;
+}
+
+.spellcont .level {
+  margin-left:0.5em;
+}
+
+#searchbar button {
+  background-color:var(--secondbg);
+  border:none;
+  color:var(--iconcolor);
+  text-transform:uppercase;
+  font-size:0.85em;
+  letter-spacing:0.1em;
+  padding:0.5em 1em;
+}
+
+#searchbar button:hover {
+  outline:1px solid var(--hovericoncolor);
+  cursor:pointer;
+}
+
+#searchbar input {
+  background-color:var(--secondbg);
+  border:0;
+  color:var(--iconcolor);
+   font-size:0.85em;
+  letter-spacing:0.1em;
+   padding:0.5em 1em;
+  margin-right:1em;
+}
+
+#searchbar label {
+  color:var(--iconcolor);
+   background-color:var(--secondbg);
+  border:0;
+   font-size:0.85em;
+  letter-spacing:0.1em;
+   padding:0.5em 1em;
+  text-transform:uppercase;
+}
+
+#searchbar label:hover {
+  outline:1px solid var(--hovericoncolor);
+  cursor:pointer;
+}
+
+#searchbar [type=checkbox] {
+  display:none;
+}
+
+#searchbar [type=checkbox]:checked + label {
+  background-color: var(--hovericoncolor);
+  color:var(--boardbg);
+  font-weight:bold;
+}
+
+
+/* autocomplete */
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;   
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: var(--secondbg);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  box-sizing:border-box;
+  padding:0.5em;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 0.2em 0.5em;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: var(--iconcolor);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: white;
+    text-decoration: none;
+    background-color: var(--hovericoncolor);
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+.ui-helper-hidden-accessible {
+  display:none;
+}
+
+.copycode {
+  font-size:0px;
+  display:inline-block;
+}
+
+.copycode:before {
+  content: 'click to copy inventory code';
+  font-size:10px;
+  text-transform:uppercase;
+  background-color:var(--boardbg);
+  padding:0.2em 0.5em;
+  margin-left:1em;
+}
+
+.copycode:active { 
+  color:var(--hovericoncolor);
+}
