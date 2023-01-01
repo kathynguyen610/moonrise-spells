@@ -31,8 +31,10 @@ body {
 }
 
 .list {
-  margin-top:2em;
-  scrollbar-width:thin;
+  margin-top: 2em;
+height: 70vh;
+overflow: auto;
+scrollbar-width: thin;
 }
 
 .searchsubdomains {
