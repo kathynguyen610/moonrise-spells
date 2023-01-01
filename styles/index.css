@@ -20,19 +20,9 @@
   --tiny: #999;
 }
 
-body {
-  background-color: var(--boardbg);
- font-family: "Jost";
-  font-size: 13px; color:var(--iconcolor);
-  min-width:500px;
-  margin:0 auto;
-  margin-top:2%;
-  padding:1em;
-}
 
 .list {
   margin-top:2em;
-  height:70vh;
   overflow:auto;
   scrollbar-width:thin;
 }
