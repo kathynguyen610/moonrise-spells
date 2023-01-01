@@ -122,6 +122,7 @@ color: var(--hovericoncolor);
   letter-spacing:0.1em;
    padding:0.5em 1em;
   margin-right:1em;
+  margin-left:1em;
 }
 
 #searchbar label {
