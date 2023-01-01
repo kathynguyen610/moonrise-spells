@@ -130,9 +130,9 @@ color: var(--hovericoncolor);
   border:0;
    font-size:0.85em;
   letter-spacing:0.1em;
-   padding:.5em 1em;
+   padding:1em;
   text-transform:uppercase;
-  line-height: 35px;
+  line-height: 45px;
 }
 
 #searchbar label:hover {
